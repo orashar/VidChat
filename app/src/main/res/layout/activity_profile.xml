@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_image_iv"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/profile_name_tv"
+        android:text="user name"
+        android:gravity="center"
+        android:layout_below="@id/profile_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/profile_sendreq_btn"
+        android:text="send request"
+        android:layout_below="@id/profile_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <Button
+        android:id="@+id/profile_cancelreq_btn"
+        android:text="cancel request"
+        android:visibility="gone"
+        android:layout_below="@id/profile_sendreq_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

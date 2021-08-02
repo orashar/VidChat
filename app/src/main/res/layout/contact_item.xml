@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:elevation="20dp"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:id="@+id/contact_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/contact_pic"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:text="user name"
+            android:textSize="24sp"
+            android:layout_below="@id/contact_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/call_btn"
+            android:text="start a chat"
+            android:textSize="24sp"
+            android:layout_below="@id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
